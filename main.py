@@ -1,4 +1,4 @@
-from flask import Flask 
+from flask import Flask, render_template
 
 app = Flask(__name__)
 
@@ -25,7 +25,10 @@ def cidade():
 def musicas():
     favoritas = ["kiss of life", "metamorphosis", "black", "blinding lights", "even flow", "ballin", "A barca"]
     return favoritas
-   
+
+@app.route("/cardapio")
+def cardapio():
+    return render_template("cardapio.html")
 
 if __name__ == "__main__":
     app.run(debug=True)
