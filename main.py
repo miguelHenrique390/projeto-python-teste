@@ -20,6 +20,11 @@ def cidade():
 
     }
     return cidade
+
+@app.route("/musicas")
+def musicas():
+    favoritas = ["kiss of life", "metamorphosis", "black", "blinding lights", "even flow", "ballin", "A barca"]
+    return favoritas
    
 
 if __name__ == "__main__":
