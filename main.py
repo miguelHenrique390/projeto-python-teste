@@ -10,5 +10,17 @@ def index():
 def curso():
     return "<h1>Curso: Tecnico em Analise e Desenvolvimento de Sistemas</h1>"
 
+@app.route("/cidade")
+def cidade():
+    cidade = {
+        "nome": "piracicaba",
+        "idade": 258,
+        "estado": "SP",
+        "habitantes": 400000
+
+    }
+    return cidade
+   
+
 if __name__ == "__main__":
-    app.run()
+    app.run(debug=True)
