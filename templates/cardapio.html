@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cardápio</title>
+
+<style>
+
+/* Estilo da página */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+
+    background-image: 
+    linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+    url("https://arquidiocesejuizdefora.org.br/wp-content/uploads/2014/10/lucas.jpg");
+
+    background-size: 60%;      /* imagem ocupa todo o site */
+    background-position: center; /* centraliza */
+    background-repeat: no-repeat; 
+    background-attachment: fixed;
+     background-color: #0f5132; /* cor de fundo atrás da imagem */
+
+    margin: 0;
+    min-height: 100vh; /* ocupa a tela toda */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Caixa do conteúdo */
+.container {
+    background-color: rgba(255,255,255,0.95);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+    text-align: center;
+}
+
+/* Título */
+h1 {
+    color: #146c43;
+    margin-bottom: 20px;
+}
+
+/* Lista */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+/* Itens da lista */
+li {
+    background-color: #198754;
+    color: white;
+    margin: 10px 0;
+    padding: 12px;
+    border-radius: 10px;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+/* Efeito ao passar o mouse */
+li:hover {
+    background-color: #145c32;
+    transform: scale(1.05);
+}
+
+</style>
+
+</head>
+<body>
+
+<div class="container">
+    <h1>Meu cardápio favorito</h1>
+    <ul>
+        <li>Churrasco</li>
+        <li>Hambúrguer</li>
+        <li>Pizza</li>
+        <li>Suco de laranja</li>
+        <li>parmegiana</li>
+    </ul>
+</div>
+
+</body>
+</html>
